@@ -29,7 +29,8 @@ public class MyBatisItemRepository implements ItemRepository {
 
     @Override
     public Optional<Item> findById(Long id) {
-        return itemMapper.findById(id);
+        Optional<Item> byId = itemMapper.findById(id);
+        return byId;
     }
 
     @Override
