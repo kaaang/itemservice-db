@@ -15,7 +15,11 @@ public class Item {
 
     @Column(name = "item_name", length = 10)
     private String itemName;
+
+    @Column
     private Integer price;
+
+    @Column
     private Integer quantity;
 
     public Item(String itemName, Integer price, Integer quantity) {
